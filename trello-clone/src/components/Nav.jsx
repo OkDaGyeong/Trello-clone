@@ -3,8 +3,9 @@ import "../styles/navStyle.scss";
 const Nav = () => {
   return (
     <>
-      <div className="nav-bar">
-        <h1>Trello</h1>
+      <div>
+        <div className="side-bar"></div>
+        <div className="title-bar"></div>
       </div>
     </>
   );

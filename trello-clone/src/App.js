@@ -1,10 +1,10 @@
-// import Nav from "./components/Nav";
-import Login from "./pages/LogIn";
+import Nav from "./components/Nav";
+// import Login from "./pages/LogIn";
 function App() {
   return (
     <div className="App">
-      {/* <Nav></Nav> */}
-      <Login />
+      <Nav />
+      {/* <Login /> */}
     </div>
   );
 }
