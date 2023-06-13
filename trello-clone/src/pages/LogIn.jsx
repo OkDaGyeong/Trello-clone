@@ -2,7 +2,7 @@ import "../styles/loginPage.scss";
 import logoImg from "../asset/Trello_logo.png";
 import googleIcon from "../asset/googleIcon.png";
 
-const LoginPage = () => {
+function LoginPage() {
   return (
     <div className="center-box">
       <div className="center-item">
@@ -27,7 +27,7 @@ const LoginPage = () => {
           <span>Continue with Google</span>
         </div>
 
-        <div>
+        <div className="form-a">
           <a href="">Cant't log in?</a>
           <span style={{ color: "#6b778c" }}>　•　</span>
           <a href="">Create an account</a>
@@ -35,6 +35,6 @@ const LoginPage = () => {
       </div>
     </div>
   );
-};
+}
 
 export default LoginPage;
