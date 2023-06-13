@@ -108,12 +108,14 @@ form {
   margin-bottom: 25px;
 }
 
-a {
-  color: $blue;
-  text-decoration-line: none;
+.form-a {
+  a {
+    color: $blue;
+    text-decoration-line: none;
 
-  &:hover {
-    text-decoration-line: underline;
-    color: $blueHover;
+    &:hover {
+      text-decoration-line: underline;
+      color: $blueHover;
+    }
   }
 }

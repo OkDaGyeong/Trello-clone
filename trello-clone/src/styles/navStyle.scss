@@ -1,5 +1,32 @@
-.side-bar {
-  height: 100%;
+.sidebar-container {
   border: 1px solid red;
-  width: 200px;
+  width: 250px;
+  height: 100%;
+  position: relative;
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    transition: transform 0.3s ease;
+    /* 애니메이션 효과를 위한 트랜지션 */
+    transform: translateX(-100%);
+    /* 사이드바를 왼쪽으로 이동하여 숨김 */
+
+
+    &.open {
+      transform: translateX(0);
+      /* 사이드바를 오른쪽으로 이동하여 보임 */
+    }
+
+  }
+
+  #menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
 }
