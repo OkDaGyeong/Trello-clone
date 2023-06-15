@@ -1,4 +1,5 @@
 $navBackColor: #5541ae;
+$navBackColorHover: #6f5fbb;
 
 .sidebar-container {
   height: 100%;
@@ -9,6 +10,16 @@ $navBackColor: #5541ae;
 .menu-item {
   color: white;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+
+
+
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
 }
 
 .menu-list {
@@ -17,6 +28,10 @@ $navBackColor: #5541ae;
     width: 244px;
     height: 32px;
     display: flex;
+
+    &:hover {
+      background-color: $navBackColorHover ;
+    }
 
     a {
       line-height: 32px;
