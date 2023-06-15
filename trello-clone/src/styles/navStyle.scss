@@ -1,32 +1,109 @@
+$navBackColor: #5541ae;
+
 .sidebar-container {
-  border: 1px solid red;
-  width: 250px;
   height: 100%;
-  position: relative;
+  width: 260px;
+  background-color: $navBackColor ;
+}
 
-  .sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f2f2f2;
-    transition: transform 0.3s ease;
-    /* 애니메이션 효과를 위한 트랜지션 */
-    transform: translateX(-100%);
-    /* 사이드바를 왼쪽으로 이동하여 숨김 */
+.menu-item {
+  color: white;
+  font-size: 14px;
+}
 
+.menu-list {
+  li {
+    padding-left: 16px;
+    width: 244px;
+    height: 32px;
+    display: flex;
 
-    &.open {
-      transform: translateX(0);
-      /* 사이드바를 오른쪽으로 이동하여 보임 */
+    a {
+      line-height: 32px;
     }
-
-  }
-
-  #menu-toggle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
 }
+
+#menu-toggle {
+  background-color: transparent;
+
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+
+  img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+  }
+
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: 0.5);
+  }
+}
+
+.user-box {
+  display: flex;
+  padding: 8px 12px;
+  text-align: center;
+  line-height: 32px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 500;
+
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+
+  #user-profile {
+    width: 32px;
+    height: 32px;
+    font-weight: 700;
+    background: linear-gradient(#1f845a, #4bce97);
+    border-radius: 3px;
+  }
+
+  #user-name {
+    width: 160px;
+  }
+}
+
+// .sidebar-container {
+
+//   width: 250px;
+//   height: 100%;
+//   position: relative;
+//   display: flex;
+//   flex-direction: row;
+
+//   .sidebar {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #f2f2f2;
+//     transition: transform 0.3s ease;
+//     /* 애니메이션 효과를 위한 트랜지션 */
+//     transform: translateX(-100%);
+//     /* 사이드바를 왼쪽으로 이동하여 숨김 */
+
+
+//     &.open {
+//       transform: translateX(0);
+//       /* 사이드바를 오른쪽으로 이동하여 보임 */
+//     }
+
+//   }
+
+//   #menu-toggle {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     z-index: 999;
+//   }
+// }
